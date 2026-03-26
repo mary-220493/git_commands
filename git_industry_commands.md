@@ -127,3 +127,61 @@ git clone --depth 1
 https://github.com/user/project.git
 
 
+## 3.REPOSITORY STATUS & INSPECTION
+
+## 1. git status
+syntax:
+git status
+
+purpose:
+
+Shows the current status of your repository.
+It tells:
+
+Which files are modified
+
+Which files are staged
+
+Which files are untracked
+
+example:
+git status
+
+screenshot proof:
+![user screenshot](screenshots/git_status.png)
+
+## 2.GIT LOG
+
+SYNTAX:
+GIT LOG
+
+purpose:
+displays complete commit history of the repository.
+It shows:
+commit id
+author name
+date
+commit message
+
+
+Example:
+git log
+
+screenshot proof:
+![user screenshot](screenshots/git_log.png)
+
+
+## 3.GIT LOG --ONELINE
+
+
+Syntax:
+git log --oneline
+
+purpose:
+shows commit history in short form(one line per commit)
+
+Example:
+fit log --oneline
+
+
+

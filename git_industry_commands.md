@@ -709,3 +709,141 @@ Delete all stash entries permanently.
 Example:
 git stash clear
 
+## 10.RESET & UNDO COMMANDS
+
+## 1. git reset
+syntax:
+git reseet <commit-id>
+
+Purpose:
+Moves the HEAD pointer to a previous commit.
+It is used to undo commits or changes in the repository.
+
+Example:
+git reset a34f67b
+
+## 2.git reset --soft
+Syntax:
+git reset --soft<commit-id>
+
+Purpose:
+Moves the HEAD to the specific commit,but keeps all changes staged.
+Useful when:
+You want to change the last commit message.
+combine commits
+
+Example:
+git reset --soft HEAD~1
+
+## 3. git reset --mixed
+Syntax:
+git reset --mixed <commit-id>
+
+Purpose:
+Moves HEAD to the specific commit and unstages the changes,but keeps them in the working directory.
+This is the deqfault reset mode.
+
+Example:
+git reset --mixed HEAD~1
+
+## 4. git reset --hard
+syntax:
+git reset --hard<commit-id>
+
+Purpose:
+Resets:
+commit history
+staging area
+working directory
+
+Example:
+git reset --hard HEAD~1
+
+## 5. git revert
+Syntax:
+git revert
+Purpose:
+Creates a new commit that reverses the changes of a prevoius commit.
+This is safer than reset because it keeps commit history.
+
+Example:
+git revert a34f67b
+
+## 6.git clean -f
+syntax:
+git clean -f
+
+Purpose:
+Deletes untracked files from the working directory.
+
+Example:
+git clean -f
+
+## 7.git clean -fd
+syntax:
+git clean -fd
+
+Purpose:
+Deletes:
+untracked files
+untracked directories.
+
+Example:
+git clean -fd
+
+
+## 11. REBASING COMMANDS
+
+## 1. GIT REBASE
+syntax:
+git rebase <branch-name>
+
+Purpose:
+Used to move or reapply commits from one branch onto another branch .
+It creates a linear commit history 
+
+Example:
+git checkout feaature-login
+git rebase main
+
+## 2. git rebase -i
+Syntax:
+git rebase -i<commit id>        
+        or
+git rebase -i HEAD ~n
+
+Purpose:
+Performs interactive rebasing,allowing you to:
+Edit commit message
+Combine commits
+Reorder commits
+remove commits
+
+Example:
+git rebase -i HEAD~3
+
+## 3.git rebase --continue
+Syntax:
+git rebase --continue
+
+Purpose:
+Continues the rebasing process after resolving conflicts.
+When conflicts happen during rebase:
+Fix the conflicting file.
+Add them to staging.
+Continue rebase.
+
+Example:
+git add index.html
+git rebase --continue
+
+## 4. git rebase --abort
+syntax:
+git rebase --abort
+
+Purpose:
+Stops the rebase procedd and returns the branch to its original state before rebasing started.
+
+Example:
+git rebase --abort
+

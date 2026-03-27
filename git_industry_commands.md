@@ -358,3 +358,150 @@ Git tracks the rename automatically.
 Example:
 git mv file1.txt file2.txt
 
+## 5.COMMIT COMMANDS
+
+## 1.git commit
+Syntax:
+git commit
+
+Pupose:
+Creates a new commit with the staged files.
+when you run this commands,Git opens a text editor to write the commit message.
+
+Example:
+git commit
+
+## 2. git commit -m
+Syntax:
+git commit -m "commit messasge"
+
+Purpose:
+Creates a commit with a message directly from the command line without opening an editor.
+
+Example:
+git commit -m "Added login page"
+
+## 3. git commit --amend
+Syntax:
+git commit --amend
+
+Purpose:
+Used to modify the most recent commit.
+ypu can:
+Change the commit message
+Add new changes to the last commit
+
+Example:
+git commit --amend
+
+Git opens the editor to edit the previous commit message.
+Example change:
+Added login page and fixed css
+
+## 4. git commit --no-edit
+Syntax:
+git commit --amend--no-edit
+
+Purpose:
+Amends the last commit without changing the commit message.
+Useful when you forgot to add a file to the previous commit.
+
+Example:
+git add style.css
+git commit --amend--no-edit
+
+This:
+Adds style.csss
+Updates the last commit without editing the message.
+
+## 6.BRANCH MANAGEMENT COMMANDS
+
+## 1. git branch
+Syntax:
+git branch
+
+Purpose:
+Displays the list of branches in the repository.
+The current branch  will be marked with *.
+
+Example:
+git branch
+
+## 2.git branch -a
+Syntax:
+git branch -a
+
+Purpose:
+Shows all brsnches,including:
+Locsl branches
+Remote branches
+
+Example;
+git branch -a
+
+
+## 3.git branch -d
+Syntax:
+git branch -d <branch-name>
+
+Purpose:
+Deletes a local branch safely.
+Git will not delete the branch if it has unmerged changed.
+
+Exxample:
+git branch -d feature-login
+
+This delete the feature-lgin branch.
+
+## 4. git branch -D
+Syntax:
+git branch -D <branch-name>
+
+Purpose:
+Forces deletion of a branch even if it has unmerged changes.
+
+Exmaple:
+git branch -D feature-login
+This force deletes the branch.
+
+## 5. git checkout
+Syntax:
+git checkout <branch-name>
+
+Purpose:
+Switches from the current branch to another branch.
+
+Example:
+git checkout development
+This moves from thr current branch to the development branch.
+
+## 6.git checkout -b
+Syntax:
+git checkout -b feature-login
+
+Purpose:
+creates a new branch and switches to it immediately.
+
+Example:
+git checkout -b fearure-login
+
+## 7.git switch
+Syntax:
+git switch <branch-name>
+
+Purpose:
+Switches to another branch (modern alternative to checkout).
+
+Example:
+git switch main
+
+## 8.git switch -c
+synatx:
+git switch -c <branch-name>
+
+Purpose:
+Creates a new branch and switches to it using the modern command.
+
+Example:
+git switch -c new-feature
+

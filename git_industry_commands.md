@@ -936,3 +936,78 @@ Pushes all local tags to the remote repository.
 Example:
 git push origin --tags
 
+## 14.SUBMODULE COMMANDS
+
+## 1. git submodule add
+syntax:
+git submodule add <repository-url>
+<folder-name>
+
+Purpose:
+Adds another git repository inside the current repository as a submodule.
+
+Example:
+git submodule add
+https://github.com/user/library.git lib
+
+## 2. git submodule init
+syntax:
+git submodule init
+
+Purpose:
+Initializes the submodule configuration in the local repository.
+
+Example:
+git submodule init
+
+## 3. git submodule update
+syntax:
+git submodule update 
+
+Purpose:
+Downloads and updates the submodule content to the correct commit.
+
+Example:
+git submodule update
+
+## 15. DEBUGGING COMMANDS
+
+## 1. git bisect
+syntax:
+git bisect <command>
+
+Purpose:
+Helps find the commit that introduced a bug using binary search.
+
+Example:
+git bisect start
+
+## 2. git bisect start
+syntax:
+git bisect start
+
+Purpose:
+Starts the bisect debugging process.
+
+Example:
+git bisect start
+
+## 3. git bisect good
+Syntax:
+git bisect good <commit-id>
+
+Purpose:
+Marks a commit as working correctly(no bug).
+
+Example:
+git bisect good a1b2c3d
+
+## 4. git bisect bad
+syntax:
+git bisect bad <commit-id>
+
+Purpose:
+Marks a commit as containing the bug.
+
+Example:
+git bisect bad d5e55f6

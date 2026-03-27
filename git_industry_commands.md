@@ -505,3 +505,207 @@ Creates a new branch and switches to it using the modern command.
 Example:
 git switch -c new-feature
 
+## 7.MERGE & INTEGRATION COMMANDS
+
+## 1.git merge
+syntax:
+git merge <branch-name>
+
+Purpose:
+Used to combine changes from one branch into another branch.
+
+Example:
+git checkout main 
+git merge feature-login
+
+## 2. git merge --no-ff
+syntax:
+git merge --no-ff <branch-name>
+
+Purpose:
+Merges a branch but creates a seperate merge commit,evenif a fast-forward merge is possible.
+
+Examples:
+git checkout main
+git merge --no-ff feature-login
+
+
+## 8.REMOTE REPOSITORY COMMANDS
+
+## 1. git remote
+syntax:
+git remote:
+
+Purpose:
+Displays the list of remote repositories connected to your local repository.
+
+Example:
+gti remote
+
+## 2. git remote -v 
+syntax:
+git remote -v
+
+Purpose:
+Shows remote repository URLs for fetch and push.
+
+Example:
+gir remote -v
+
+## 3. gir=t remote add 
+syntax:
+git remote add <name><repository-url>
+
+Purpose:
+Adds a new remote repository to your locsl git project.
+
+Example:
+git remote add origin
+https://github.com/madhu-220630/myproject.git
+
+## 4.git remote remove
+Syntax:
+git remote remove <remote-name>
+
+Purpose:
+removes a remote repository connection from your project.
+
+Example:
+git remote remove origin
+
+## 5. git fetch
+Syntax:
+git fetch
+
+Purpose:
+Downloads new changes from the remote repositories but does not merge them into yoour current branch.
+
+Example:
+git fetch origin
+
+## 6.git fetch --all
+syntax:
+git fetch --all
+
+Purpose:
+Fetches changes from all remote repositories.
+
+Example:
+git fetch --all
+
+## 7.git pull
+syntax:
+git pull
+
+Purpose:
+Downlloads changes from the remote repositories and merges them automatically into the 
+current branch.
+
+Example:
+git pull origin main
+
+## 8.git pull --rebase
+syntax:
+git pull --rebase
+
+Purpopse:
+Fetches changes from remote and reapplies your local commits on top pf them,keeping history clear.
+
+Example:
+git pull --rebase origin main
+
+## 9.git push
+syntax:
+git push
+
+Purpose:
+Uploads local commits to the remote repository.
+
+Example:
+git push origin main
+
+## 10.git push -u origin mbranch-name
+syntax:
+git push -u origin <branch-name>
+
+Purpose:
+Pushes a branch to the remote repository and sets upstream tracking.
+After this ,you can simply use git push.
+
+Example:
+git push -u origin main
+
+## 11. git push --force
+syntax:
+git push --force
+
+Purpose:
+Forces git to overwrite the remote branch with local changes.
+
+Example:
+git push --force origin main
+
+
+## 9.STASH COMMANDS
+
+## 1.git stash
+syntax:
+git stash
+
+Purppose:
+Temporarily saves your uncommited changes and cleans the working directory so you can 
+work something on else.
+
+Example:
+git stash
+
+## 2.git stash list
+syntax:
+git stash list
+
+Purpose:
+Displays the list of all saved stashes.
+
+Example:
+git stash list
+
+## 3.git stash pop
+Syntax:
+git stash pop
+
+Purpose:
+Apllies the latest stash changes and removes it from the stash list.
+
+Example:
+git stash pop
+
+## 4.git stash apply
+Syntax:
+git stash pop
+
+Purpose:
+Apply saved stash changes but keeps the stash in the stash list.
+
+Example:
+git stash apply
+
+## 5.git stash drop
+Syntax:
+git stash drop <stash-id>
+
+Purpose:
+Deletes a specific stash entry.
+
+Example:
+git stash drop stash@{0}
+
+## 6. git stsash clear
+Syntax:
+git stash clear
+
+Purpose:
+Delete all stash entries permanently.
+
+Example:
+git stash clear
+

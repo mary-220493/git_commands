@@ -1011,3 +1011,119 @@ Marks a commit as containing the bug.
 
 Example:
 git bisect bad d5e55f6
+
+## STEP-3
+
+## 1.Create repository
+
+Purpose:
+Creates a new project repository on GitHub to store code and files.
+
+Example:
+Create a repository named student-management-system on github.
+
+## 2. Add README
+
+Purpose:
+Adds a README.md file to describe the project and provide instructions.
+
+Example:
+Add a README. explaining the project,features,and how to run the code.
+
+## 3. Add.gitignore
+
+Purpose:
+Specifies files or folders that Git should ignore.
+
+Example:
+Add.gitignore to ignore files like:
+node_modules/
+*.log
+.env
+
+## 4. Create Issue
+Purpose:
+Creates a task,bug report,or feature request in the repository.
+
+Example:
+Creates an issue titled "Fix login page error".
+
+## 5. Assign issue
+
+Purpose:
+Assigns the issue to a team member responsible for fixing it.
+
+Example:
+Assign the login bug issue to Madhu.
+
+## 6. Create Branch
+
+Purpose:
+Creates a seperate branch to work on new features without affecting the main code.
+
+Example:
+Create a branch named login-feature.
+
+## 7. Push Branch
+
+Purpose:
+Uploads the local branch to the Github repository.
+
+Example:
+git ppush origin login-feature
+
+## 8. Create Pull Request
+
+Purpose:
+Request to merge changes from one branch to another(usually to main).
+
+Example:
+Create a pull request from login-feature->main
+
+## 9. Review Pull Request
+
+Purpose:
+Allows team members to check the code and suggest changes before merging.
+
+Example:
+A teammate reviews the pull request and comments on improvements.
+
+## 10. Merge Pull Request
+
+Purpose:
+Combines the approved changes into the main branch.
+
+Example:
+Merge login-feature branch into main branch.
+
+## 11. Resolve Merge Conflict 
+
+Purpose:
+Fixes conflicts when two branches change the same code differently.
+
+Example:
+Edit the conflicting file and choose the correct code,then commit.
+
+## 12. Close Issue
+
+Purpose:
+Marks the issue as completed after fixing the problem.
+
+Example:
+Close the issue "Fix login page error".
+
+## 13. Add Labels
+
+Purpose:
+Adds categories to issues or pull requests for better organization.
+
+Example:
+Add labels like bug,enhancement,or documentation.
+
+## 14. Add Collaborations
+
+Purpose:
+Allows other users to work on the repository.
+
+Example:
+Add team members as collaborators so they can push code.

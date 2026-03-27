@@ -278,5 +278,83 @@ git shortlog
 Screenshot proof:
 ![user screenshot](screenshots/git_reflog_shortlog.png)
 
+## 4.FILE TRACKING COMMANDS
 
+## 1.git add
+syntax:
+git add <file-name>
+
+purpose:
+Adds a specific file to the staging area so it will be included in the next commit.
+
+Example:
+git add git_industry_commands
+
+
+## 2.git add .
+syntax:
+git add .
+
+Purpose:
+Adds all modified and new files in the current folder to this sytaging area.
+
+Example:
+git add.
+
+## 3.git add -p
+syntax:
+git add -p
+
+purpose:
+Adds changes interactively(part by part) to the staging area.
+
+Example:
+git add -p
+
+## 4.git restore
+syntax:
+git restore <file-name>
+
+Purpose:
+restores a file to its last commited version (undoes local changes).
+
+Example:
+git restore git_industry_commands
+
+## 5.git restore --staged
+Syntax:
+git rstore --staged <file-name>
+
+Purpose:
+Removes a file from the staging area but keeps the file changes in your working directory.
+
+Example:
+git restore --staged <file-name>
+
+Purpose:
+Removes a file from the staging area but keeps the files changes in your working directory.
+
+Example:
+git restore --staged git_industry_commands
+
+## 6.git rm
+Syntax:
+git rm <file-name>
+
+Purpose:
+Deletes a file from both the working directory and Git repository.
+
+Example:
+git rm oldfile.txt
+
+## 7. git mv
+Syntax:
+git mv <old-file-name><new-file-name>
+
+Purpose:
+Used to rename or move a file in Git.
+Git tracks the rename automatically.
+
+Example:
+git mv file1.txt file2.txt
 

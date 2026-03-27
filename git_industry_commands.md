@@ -847,3 +847,92 @@ Stops the rebase procedd and returns the branch to its original state before reb
 Example:
 git rebase --abort
 
+## 12.CHERRY PICK & PATCH COMMANDS
+
+## 1.git cherry-pick
+syntax:
+git cherry-pick <commit-id>
+
+Purpose:
+This command is used to apply a speccific commit from one branch to another branch .
+Instead of merging the entire branch,it copies only the selected commit.
+
+Example:
+git checkout main
+git cherry-pick a1b2c3d
+
+## 2.git format-patch
+syntax:
+git format-patch <commit-id>    or      git format-patch-n
+
+Purpose:
+This command creates patch files (.patch) from commitd.
+These patch files can be shared with others or applied to another repository.
+
+Example:
+git format-patch-2
+
+## 3. git apply
+syntax:
+git apply<patch-file>
+
+Purpose:
+This command applies changes from a patch file to the working directory.
+It does not create a commit automatically.
+
+Example:
+git apply 0001-added-login-feature.patch
+
+## 4. git am
+syntax:
+git am <patch-file>
+
+Purpose:
+This commands applies patch files and automatically creates commits.
+It is mainly used when patches are recieved through email or shared patch files.
+
+Examplle:
+git am 0001-addded-login-feature.patch
+
+## 13.TAGGING COMMANDS
+
+## 1.git tag
+syntax:
+git tag
+
+Purpose:
+Cretaes a tag for the current commit to mark a specific version.
+
+Example:
+git tag v1.0
+
+## 2.git tag -a
+syntax:
+git tag -a <tag-name>-m "message"
+
+Purpose:
+Creates an annotated tag with a message for better version information.
+
+Example:
+git tag -a v1.1 -m "first stable release"
+
+## 3.git tag -d
+syntax:
+git tag -d <tag-name>
+
+Purpose:
+Deletes an existing local tag.
+
+Exaple:
+git tag -d v1.0
+
+## 4. git push origin --tags
+syntax:
+git push origin --tags
+
+Purpose:
+Pushes all local tags to the remote repository.
+
+Example:
+git push origin --tags
+
